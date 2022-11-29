@@ -1,0 +1,31 @@
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+void entering_Number_In_Masiv(int &masiv){
+cout<<"enter number in masiv\n";
+for(int i=0; i<10; i++){
+    cin>>masiv[i];
+}
+}
+void math_Waiting(){
+int sum;
+for(int i=0; i<10; i++){
+    sum+=masiv[i-1]*masiv[i];
+}
+}
+void dispersion(){
+    int dispersion;
+    int middle_Number;
+    for(int i=0;i<<10;i++){
+    middle_Number+=masiv[i]/10;
+    }
+    for(int i=0;i<10;i++){
+    dispersion+=pow((masiv[i]-middle_Number),2)/10;
+}
+int main(){
+    int masiv[10];
+    entering_Number_In_Masiv(int masiv);
+    return 0;
+}
